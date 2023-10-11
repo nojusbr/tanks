@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Tank") || other.gameObject.CompareTag("Destructable"))
+        if (other.gameObject.CompareTag("Tank") || other.gameObject.CompareTag("Destructable") || other.gameObject.CompareTag("Tree"))
         {
             var health = other.gameObject.GetComponent<Health>();
 
