@@ -19,9 +19,9 @@ public class Health : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            health = 0;
-            //TODO: die
-            print("I'm dead!");
+            health = 100;
+            transform.position = new Vector3(3, 1.090001f, 3);
+
         }
         healthBar.localScale = new Vector3((float)health / maxHealth, 1, 1);
     }
